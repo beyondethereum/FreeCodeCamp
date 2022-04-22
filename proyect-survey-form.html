@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title id="title">SpaceX Recruitment Survey</title>
+</head>
+
+<body>
+  <h1>SpaceX Survey</h1>
+  <p id="description">The following questions will determine if you are a good fit for SpaceX</p>
+  <form id="survey-form">
+
+    <!-- Name -->
+    <div id="name">
+      <label for="first_name" id="name-label">First Name</label>
+      <br>
+      <input type="text" name="first_name" placeholder="Enter Name" required>
+    </div>
+    <br>
+
+    <!-- Email & HTML5/Formmating Validation-->
+    <div id="email">
+      <label for="email" id="email-label">Email</label>
+      <br>
+      <input type="email" id="email" placeholder="default@gmail.com" pattern=".+@gmail\.com" required>
+    </div>
+    <br>
+
+    <!-- SSN -->
+    <div id="number">
+      <label for="number" id="number-label">SSN</label>
+      <br>
+      <input type="number" name="number" placeholder="21318" pattern="\d*" min="0" max="99999999999" required>
+    </div>
+    <br>
+
+    <!-- Dropdown -->
+    <div id="dropdown">
+      <label for="dropdown" id="dropdown-label">Previous Job</label>
+      <br>
+      <select name="previous-job">
+        <option value="apple">Apple</option>
+        <option value="microsoft">Microsoft</option>
+        <option value="tesla">Tesla</option>
+        <option value="blue-origin">Blue Origin</option>
+        <option value="boeing">Boeing</option>
+        <option value="virgin-orbit">Virgin Orbit</option>
+        <option value="northrop">Northrop</option>
+        <option value="sierra-nevada">Sierra Nevada</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <br>
+
+    <!-- Radio Buttons -->
+    <div>
+      <label for="radio">Who is the most creative men among this titans and why?</label>
+      <br>
+      <input type="radio" name="elon">
+      <label for="radio">Elon Musk</label>
+      <br>
+      <input type="radio" name="vitalik">
+      <label for="radio">Vitalik Buterin</label>
+      <br>
+      <input type="radio" name="jeff">
+      <label for="radio">Jeff Bezos</label>
+    </div>
+    <br>
+
+    <!-- Text Area-->
+    <div id="comment">
+      <textarea rows="12" cols="40"></textarea>
+    </div>
+    <br>
+
+    <!-- Checkbox -->
+    <div id="checkbox">
+      <label for="chekbox">Do you agree with SpaceX TC?</label>
+      <br>
+      <input type="checkbox" name="yes" value="agreement">
+      <label for="yes">Yes</label>
+      <br>
+      <input type="checkbox" name="no" value="agreement">
+      <label for="no">No</label>
+    </div>
+    <br>
+
+    <!-- Button -->
+    <div id=submit>
+      <button type="submit">Submit</button>
+    </div>
+
+  </form>
+</body>
+
+</html>
